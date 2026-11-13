@@ -6,14 +6,12 @@ sys.path.insert(0,KIT)
 from continuous_hands import create_hand
 sc=bpy.context.scene
 bpy.context.preferences.filepaths.save_version=0
+from rig_hands import make_press_hand, PRESS_SPECS
+_pool=bpy.data.collections.get('pools')
 for root in [o for o in bpy.data.objects if o.get('sprite_key')]:
-    key=root['sprite_key'];coll=root.users_collection[0]
     for child in list(root.children_recursive):bpy.data.objects.remove(child,do_unlink=True)
     bpy.data.objects.remove(root,do_unlink=True)
-    from rig_hands import make_rigged_hand
-    new=make_rigged_hand('hand_press_'+key,coll,'#edbd94','#6c7d88' if key=='thumb' else '#9c3044',pose='thumbprint' if key=='thumb' else 'flat')
-    new.parent=bpy.data.objects['Y_UP'];new['sprite_key']=key;new['hand_pose']='press'
-    for child in new.children_recursive:child.hide_render=True
+for key in PRESS_SPECS: make_press_hand(key,_pool)
 # Bright film lights need restrained hand reflectance to retain sculpted anatomy.
 for m in bpy.data.materials:
     if not m.node_tree or not (m.name.startswith('Continuous skin ') or m.name.startswith('Natural warm nail')):continue

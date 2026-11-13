@@ -1,5 +1,5 @@
 """Render frames of 'Elon for a Day' from film.blend + data/ (resumable).
-   blender -b film.blend --python render_frames.py -- --start 0 --end 3754 --engine CYCLES --samples 96 --out frames
+   blender -b film.blend --python render_frames.py -- --start 0 --end 3994 --engine CYCLES --samples 96 --out frames
 Skips frames that already exist, so re-running continues where it stopped."""
 import bpy, json, os, sys, math, time, base64, hashlib
 import numpy as np
@@ -7,7 +7,7 @@ from mathutils import Matrix, Vector, Quaternion, Euler
 
 KIT = os.path.dirname(os.path.abspath(bpy.data.filepath)); DATA = os.path.join(KIT, 'data'); ASSETS = os.path.join(KIT, 'assets')
 argv = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else []
-A = {'start': 0, 'end': 3754, 'engine': 'CYCLES', 'samples': 96, 'out': os.path.join(KIT, 'frames'), 'step': 1, 'res': 100, 'only': ''}
+A = {'start': 0, 'end': 3994, 'engine': 'CYCLES', 'samples': 96, 'out': os.path.join(KIT, 'frames'), 'step': 1, 'res': 100, 'only': ''}
 for i in range(0, len(argv) - 1, 2): A[argv[i].lstrip('-')] = argv[i + 1]
 for k in ('start', 'end', 'samples', 'step', 'res'): A[k] = int(A[k])
 DATA = os.path.abspath(A.get('data', DATA))
@@ -178,6 +178,10 @@ def apply_frame(F):
             elif key=='click':
                 reach=max(0,min(1,(F['f']-2462)/14));reach=1-(1-reach)**3
                 root.matrix_basis=Matrix.Translation(Vector((.08,.825+.18*(1-reach),-.45))) @ Euler((-math.pi/2,0,-.25),'XYZ').to_matrix().to_4x4()
+            elif key=='tap':  # preview sprite was offset for drawing; the 3D fingertip goes exactly on the button
+                q=s['q'];Q=Quaternion((q[3],q[0],q[1],q[2]));R=Q.to_matrix()
+                tip=Vector(s['p'])-R@Vector((.2*.09,0,0))+R@Vector((0,.26*.09,0))
+                root.matrix_basis=Matrix.Translation(tip) @ Q.to_matrix().to_4x4()
             else:
                 q=s['q'];root.matrix_basis=Matrix.Translation(Vector(s['p'])) @ Quaternion((q[3],q[0],q[1],q[2])).to_matrix().to_4x4()
             continue

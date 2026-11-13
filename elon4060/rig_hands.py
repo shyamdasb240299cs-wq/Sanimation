@@ -50,6 +50,9 @@ def _bones():
     return B
 
 POSES = {  # bone: (x curl [neg = toward palm], z spread) in degrees
+    'point': {'index_0': (-4, 2), 'index_1': (-6, 0), 'index_2': (-4, 0), 'middle_0': (-70, 0), 'middle_1': (-85, 0), 'middle_2': (-55, 0),
+              'ring_0': (-72, -3), 'ring_1': (-88, 0), 'ring_2': (-55, 0), 'little_0': (-74, -6), 'little_1': (-88, 0), 'little_2': (-55, 0),
+              'thumb_0': (-30, 22), 'thumb_1': (-25, 0), 'thumb_2': (-15, 0)},
     'thumbprint': {'index_0': (-22, 7), 'index_1': (-30, 0), 'index_2': (-18, 0), 'middle_0': (-28, 0), 'middle_1': (-36, 0), 'middle_2': (-22, 0),
                    'ring_0': (-34, -5), 'ring_1': (-40, 0), 'ring_2': (-24, 0), 'little_0': (-40, -11), 'little_1': (-44, 0), 'little_2': (-26, 0),
                    'thumb_0': (-10, -6), 'thumb_1': (-6, 0), 'thumb_2': (-8, 0)},
@@ -57,7 +60,7 @@ POSES = {  # bone: (x curl [neg = toward palm], z spread) in degrees
              'ring_0': (-7, -5), 'ring_1': (-10, 0), 'ring_2': (-7, 0), 'little_0': (-8, -11), 'little_1': (-11, 0), 'little_2': (-8, 0),
              'thumb_0': (-14, 8), 'thumb_1': (-8, 0), 'thumb_2': (-6, 0)},
 }
-ORIENT = {'thumbprint': Euler((0, math.radians(-36), math.radians(-30)), 'XYZ'), 'flat': Euler((0, 0, 0), 'XYZ')}
+ORIENT = {'point': Euler((math.radians(-28), 0, 0), 'XYZ'), 'thumbprint': Euler((0, math.radians(-36), math.radians(-30)), 'XYZ'), 'flat': Euler((0, 0, 0), 'XYZ')}
 
 def _seg_dist(P, a, b):
     ab = b - a; t = np.clip(((P - a) @ ab) / max(ab @ ab, 1e-12), 0, 1); return np.linalg.norm(P - (a + t[:, None] * ab), axis=1)
@@ -114,8 +117,8 @@ def make_rigged_hand(name, collection, skin_hex, sleeve_hex, pose='thumbprint'):
     # --- contact alignment from the evaluated (posed) skin ---
     bpy.context.view_layer.update(); dg = bpy.context.evaluated_depsgraph_get(); ev = ob.evaluated_get(dg)
     M = root.matrix_world.inverted() @ ob.matrix_world; P = np.array([(M @ v.co)[:] for v in ev.data.vertices])
-    if pose == 'thumbprint':
-        gi = ob.vertex_groups['thumb_2'].index; tw = np.array([max([g.weight for g in v.groups if g.group == gi] or [0]) for v in ob.data.vertices])
+    if pose in ('thumbprint', 'point'):
+        gi = ob.vertex_groups['thumb_2' if pose == 'thumbprint' else 'index_2'].index; tw = np.array([max([g.weight for g in v.groups if g.group == gi] or [0]) for v in ob.data.vertices])
         cand = P[tw > .5] if (tw > .5).sum() > 20 else P
     else:
         gi = ob.vertex_groups['palm'].index; tw = np.array([max([g.weight for g in v.groups if g.group == gi] or [0]) for v in ob.data.vertices])
@@ -123,4 +126,20 @@ def make_rigged_hand(name, collection, skin_hex, sleeve_hex, pose='thumbprint'):
     zmin = cand[:, 2].min(); pad = cand[cand[:, 2] < zmin + .0025]; c = pad.mean(0)
     orient.location = (-c[0], -c[1], -zmin)
     root['skin_object'] = ob.name; root['rig_object'] = rig.name; root['skin_vertices'] = len(ob.data.vertices)
+    return root
+
+# sprite-driven hands: key -> (skin, sleeve, pose). 'grip' uses the continuous phone-grip hand; others are rigged.
+PRESS_SPECS={'thumb':('#edbd94','#6c7d88','thumbprint'),'fist':('#edbd94','#9c3044','flat'),'click':('#edbd94','#9c3044','flat'),
+             'tap':('#edc8ac','#239ca6','point'),'hold':('#edc8ac','#239ca6','grip')}
+def make_press_hand(key,coll):
+    import bpy
+    skin,sleeve,pose=PRESS_SPECS[key]
+    if pose=='grip':
+        from continuous_hands import create_hand
+        root=create_hand('hand_press_'+key,coll,skin,sleeve,pose='grip')
+    else:
+        from rig_hands import make_rigged_hand
+        root=make_rigged_hand('hand_press_'+key,coll,skin,sleeve,pose=pose)
+    root.parent=bpy.data.objects['Y_UP'];root['sprite_key']=key;root['hand_pose']=pose
+    for child in root.children_recursive:child.hide_render=True
     return root

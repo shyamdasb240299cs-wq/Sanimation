@@ -3,7 +3,7 @@ setlocal
 set "BLENDER=C:\Program Files\Blender Foundation\Blender 5.3\blender.exe"
 if not exist "%BLENDER%" set "BLENDER=blender"
 set START=0
-set END=3754
+set END=3994
 set SAMPLES=96
 if not "%~1"=="" set START=%~1
 if not "%~2"=="" set END=%~2

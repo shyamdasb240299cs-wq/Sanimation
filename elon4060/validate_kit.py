@@ -10,7 +10,7 @@ for p in (ROOT/'data/sets').glob('*.json'):
         for mt in m['mats']:
             for t in [mt.get('map'),mt.get('emap')]:
                 if t: files.add(ROOT/'data/tex'/(t['id']+'.png'))
-for f in range(3755):
+for f in range(3995):
     p=ROOT/'data/frames'/f'f{f:04d}.json'
     if not p.exists(): errors.append(str(p));continue
     F=json.loads(p.read_text());shots[F['shot']]=shots.get(F['shot'],0)+1
@@ -28,4 +28,4 @@ for p in (ROOT/'assets/models').glob('*/*.gltf'):
         uri=x.get('uri','')
         if uri and not uri.startswith('data:') and not (p.parent/uri).is_file():errors.append(str(p.parent/uri))
 if errors:raise RuntimeError('\n'.join(errors[:40])+f'\n{len(errors)} validation failures')
-print(f'PASS: 3755 frames, {len(shots)} shots, {len(sets)} sets, {len(files)} referenced files, {len(used_cards)} character images; all glTF dependencies present.')
+print(f'PASS: 3995 frames, {len(shots)} shots, {len(sets)} sets, {len(files)} referenced files, {len(used_cards)} character images; all glTF dependencies present.')

@@ -22,10 +22,7 @@ def install_hands(kit):
             if name=='apartment' and not sc.get('tablet_surface_id'):
                 sc['tablet_surface_id']=rs[i-1]['id']
     coll=bpy.data.collections.get('pools')
-    for key,sleeve in [('thumb','#6c7d88'),('fist','#9c3044'),('click','#9c3044')]:
-        from rig_hands import make_rigged_hand
-        root=make_rigged_hand('hand_press_'+key,coll,'#edbd94',sleeve,pose='thumbprint' if key=='thumb' else 'flat')
-        root.parent=bpy.data.objects['Y_UP'];root['sprite_key']=key;root['hand_pose']='press'
-        for child in root.children_recursive:child.hide_render=True
+    from rig_hands import make_press_hand, PRESS_SPECS
+    for key in PRESS_SPECS: make_press_hand(key,coll)
     sc['continuous_hands_version']='v2'
     print('Installed continuous Blender hands; tablet screen',sc.get('tablet_surface_id'))

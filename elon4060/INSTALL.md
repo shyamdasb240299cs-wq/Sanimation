@@ -1,6 +1,6 @@
 # Elon for a Day — render it on the RTX 4060 laptop
 
-This folder has everything needed to render the final 2:05 vertical film (1080 × 1920, 30 fps, 3,755 frames) in Blender Cycles on an NVIDIA RTX 4060. You get:
+This folder has everything needed to render the final 2:13 vertical film (1080 × 1920, 30 fps, 3,995 frames) in Blender Cycles on an NVIDIA RTX 4060. You get:
 
 - all 10 sets
 - the rigged 3D hands
@@ -62,7 +62,7 @@ Double-click **`setup_windows.bat`** (Linux: `bash setup_linux.sh`). It runs fou
 1. Rejoins the large tree model that was split for GitHub.
 2. Builds `film.blend`: all sets, Poly Haven materials and props, lights, camera and compositor. This takes 10–30 minutes, and the window prints progress.
 3. Installs the rigged 3D hands (phone grip, thumbprint on the tablet, open-palm button press) and the final colour look.
-4. Validates the kit: all 3,755 frames and every referenced file must be present.
+4. Validates the kit: all 3,995 frames and every referenced file must be present.
 
 It ends with **SETUP COMPLETE**. If it says SETUP FAILED, see Troubleshooting below.
 
@@ -73,14 +73,14 @@ It ends with **SETUP COMPLETE**. If it says SETUP FAILED, see Troubleshooting be
 Double-click **`bench_windows.bat`**. It renders 15 representative frames into `bench\`.
 
 - The log must say **`Cycles device: OPTIX`** (or `CUDA`). If it says CPU, see Troubleshooting.
-- Each frame prints `... s/frame avg`. Full film time ≈ that number × 3,755, so 4 s/frame ≈ 4.2 hours.
-- Open the images in `bench\` and check them. `f0690.jpg` is the thumbprint on the tablet, `f2146.jpg` the hand on the big red button, `f0100.jpg` the phone grip.
+- Each frame prints `... s/frame avg`. Full film time ≈ that number × 3,995, so 4 s/frame ≈ 4.2 hours.
+- Open the images in `bench\` and check them. `f0690.jpg` is the thumbprint on the tablet, `f2146.jpg` the hand on the big red button, `f0100.jpg` the phone grip, `f3920.jpg` Elon tapping Subscribe in the new ending.
 
 ---
 
 ## 6. Render the film
 
-Double-click **`run_windows.bat`**. Frames go to `frames\f0000.jpg` … `frames\f3754.jpg`.
+Double-click **`run_windows.bat`**. Frames go to `frames\f0000.jpg` … `frames\f3994.jpg`.
 
 - Plug the laptop into power and set Windows → Power mode to **Best performance**.
 - Put the laptop on a hard, flat surface for airflow, and turn off sleep (Settings → System → Power → Screen and sleep → *Never* while plugged in).
@@ -90,8 +90,8 @@ Double-click **`run_windows.bat`**. Frames go to `frames\f0000.jpg` … `frames\
 **Optional, from a Command Prompt in `elon4060`:**
 ```
 run_windows.bat 0 1999 96        :: only frames 0–1999 (e.g. split the work with a second PC)
-run_windows.bat 2000 3754 96     :: the rest
-run_windows.bat 0 3754 64        :: fewer samples = faster, slightly softer (denoiser still on)
+run_windows.bat 2000 3994 96     :: the rest
+run_windows.bat 0 3994 64        :: fewer samples = faster, slightly softer (denoiser still on)
 ```
 
 ---
@@ -100,7 +100,7 @@ run_windows.bat 0 3754 64        :: fewer samples = faster, slightly softer (den
 
 **Option A:** copy the `frames\` folder back to the authoring laptop for the final review, grade and encode.
 
-**Option B, finish on this laptop (needs ffmpeg):** double-click **`finish\finish_windows.bat`**. It checks that all 3,755 frames exist, then writes `finish\Elon_for_a_Day_Blender.mp4` with burned-in captions and the full original audio: voiceover, music and SFX at −14 LUFS.
+**Option B, finish on this laptop (needs ffmpeg):** double-click **`finish\finish_windows.bat`**. It checks that all 3,995 frames exist, then writes `finish\Elon_for_a_Day_Blender.mp4` with burned-in captions and the full original audio: voiceover, music and SFX at −14 LUFS.
 
 ---
 
@@ -110,7 +110,7 @@ run_windows.bat 0 3754 64        :: fewer samples = faster, slightly softer (den
 |---|---|
 | `Cycles device: CPU` or "no supported GPU" | Update the NVIDIA driver and reboot. Then in Blender: *Edit → Preferences → System → Cycles Render Devices → OptiX*, tick the RTX 4060, and click *Save Preferences*. |
 | `'blender' is not recognized` | Blender isn't at the default path. Edit the `BLENDER=` line at the top of the `.bat` files. |
-| Out of memory / crash | Close other apps (browsers, games). Re-run. It resumes. Try `run_windows.bat 0 3754 64`. |
+| Out of memory / crash | Close other apps (browsers, games). Re-run. It resumes. Try `run_windows.bat 0 3994 64`. |
 | Setup fails at step 2 | Check you have Blender **5.3.0** and that the whole `elon4060` folder (including `assets` and `data`) is present. Delete `film.blend` if it exists and re-run setup. |
 | One frame looks wrong | Delete that `frames\fNNNN.jpg` and run `run_windows.bat` again. Only missing frames are rendered. |
 | Very slow (>15 s/frame) | Check the GPU is used (see first row), the laptop is plugged in, and power mode is Best performance. |
@@ -128,6 +128,6 @@ run_windows.bat 0 3754 64        :: fewer samples = faster, slightly softer (den
 | `continuous_hands.py`, `install_hands.py`, `refine_scene.py` | Hand meshes for device grips, installation, final look |
 | `render_frames.py` | Per-frame renderer (camera, characters, props, screens, lights, post) |
 | `validate_kit.py`, `rejoin_parts.py` | Kit check, rejoin split files |
-| `data/` | Exported animation: 3,755 frame files, character images, screens, geometry |
+| `data/` | Exported animation: 3,995 frame files, character images, screens, geometry |
 | `assets/` | Poly Haven CC0 HDRIs, textures and 91 models (`ASSET-LICENSES.json`) |
 | `finish/` | Captions, mixed audio, caption font, encode scripts |
