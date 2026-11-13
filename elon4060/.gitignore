@@ -1,6 +1,6 @@
 film.blend
 film.blend1
-frames/
+/frames/
 bench/
 __pycache__/
 *.pyc
