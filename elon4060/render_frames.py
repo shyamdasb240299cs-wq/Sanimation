@@ -151,7 +151,8 @@ def apply_frame(F):
         if i >= len(F['cards']): o.hide_render = True; continue
         c = F['cards'][i]; o.hide_render = False; nt = o.active_material.node_tree
         nt.nodes['img'].image = load(os.path.join(DATA, 'cards', c['img']))
-        o.matrix_basis = Matrix.Translation(Vector(c['p'])) @ Euler((0, c['ry'], c['rz']), 'XYZ').to_matrix().to_4x4() @ Matrix.Diagonal((c['s'], c['s'], c['s'], 1))
+        R_ = Quaternion((c['q'][3], c['q'][0], c['q'][1], c['q'][2])).to_matrix().to_4x4() if 'q' in c else Euler((0, c['ry'], c['rz']), 'XYZ').to_matrix().to_4x4()
+        o.matrix_basis = Matrix.Translation(Vector(c['p'])) @ R_ @ Matrix.Diagonal((c['s'], c['s'], c['s'], 1))
         nt.nodes['tint'].outputs[0].default_value = (*[.45+.55*v for v in hexc(c['tint'])], 1); nt.nodes['opacity'].outputs[0].default_value = c['alpha']
         nt.nodes['litmix'].inputs['Fac'].default_value = 0.14 if c['lit'] else 0.0; nt.nodes['emit'].outputs[0].default_value = 0.92 if c['lit'] else 1.0; nt.nodes['diffk'].outputs[0].default_value = diffk * 0.65
         o.visible_shadow = c['cast']
