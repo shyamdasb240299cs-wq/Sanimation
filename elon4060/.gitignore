@@ -1,0 +1,7 @@
+film.blend
+film.blend1
+frames/
+bench/
+__pycache__/
+*.pyc
+finish/*.mp4

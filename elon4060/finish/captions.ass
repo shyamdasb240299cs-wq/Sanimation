@@ -1,0 +1,149 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1440
+PlayResY: 2560
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Noto Sans Black,118,&H00FFFFFF,&H00FFFFFF,&H00251927,&H96000000,1,0,0,0,100,100,0,0,1,11,5,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.63,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WHAT IF YOU
+Dialogue: 0,0:00:00.63,0:00:01.73,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WOKE UP TOMORROW,
+Dialogue: 0,0:00:01.73,0:00:02.49,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}CHECKED YOUR BANKING
+Dialogue: 0,0:00:02.49,0:00:03.03,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}APP,
+Dialogue: 0,0:00:03.03,0:00:05.27,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND SAW {\c&H4AD5FF&}$340{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.27,0:00:06.75,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}BILLION?
+Dialogue: 0,0:00:07.19,0:00:07.75,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}BEFORE YOU CAN
+Dialogue: 0,0:00:07.75,0:00:08.69,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}EVEN SCREAM,
+Dialogue: 0,0:00:08.89,0:00:09.57,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}ELON{\c&HFFFFFF&} MUSK KNOCKS
+Dialogue: 0,0:00:09.57,0:00:10.25,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ON YOUR APARTMENT
+Dialogue: 0,0:00:10.25,0:00:11.01,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}DOOR HOLDING A
+Dialogue: 0,0:00:11.01,0:00:11.89,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}GLOWING TITANIUM
+Dialogue: 0,0:00:11.89,0:00:12.73,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TABLET.
+Dialogue: 0,0:00:13.01,0:00:14.03,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}HE LOOKS COMPLETELY
+Dialogue: 0,0:00:14.03,0:00:14.99,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}EXHAUSTED.
+Dialogue: 0,0:00:15.35,0:00:15.97,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}HE SAYS,
+Dialogue: 0,0:00:16.39,0:00:16.71,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}I NEED A
+Dialogue: 0,0:00:16.71,0:00:17.51,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}VACATION.
+Dialogue: 0,0:00:18.05,0:00:19.01,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SIGN RIGHT HERE,
+Dialogue: 0,0:00:19.03,0:00:19.53,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND EVERYTHING
+Dialogue: 0,0:00:19.53,0:00:20.31,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}I OWN IS
+Dialogue: 0,0:00:20.31,0:00:21.43,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}LEGALLY YOURS.
+Dialogue: 0,0:00:21.89,0:00:22.51,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU PRESS YOUR
+Dialogue: 0,0:00:22.51,0:00:23.13,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THUMB TO THE
+Dialogue: 0,0:00:23.13,0:00:23.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}GLASS.
+Dialogue: 0,0:00:24.23,0:00:24.87,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}INSTANTLY,
+Dialogue: 0,0:00:24.87,0:00:25.79,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOUR PHONE EXPLODES
+Dialogue: 0,0:00:25.79,0:00:27.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WITH {\c&H4AD5FF&}10,000{\c&HFFFFFF&} NOTIFICATIONS.
+Dialogue: 0,0:00:28.11,0:00:28.63,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU DON'T JUST
+Dialogue: 0,0:00:28.63,0:00:29.63,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}HAVE HIS CASH.
+Dialogue: 0,0:00:29.71,0:00:30.55,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU NOW OWN
+Dialogue: 0,0:00:30.55,0:00:31.37,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}SPACEX,{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.73,0:00:32.33,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}TESLA,{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.51,0:00:32.89,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}X,{\c&HFFFFFF&}
+Dialogue: 0,0:00:32.97,0:00:34.01,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND EVERY SINGLE
+Dialogue: 0,0:00:34.01,0:00:34.71,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ONE OF HIS
+Dialogue: 0,0:00:34.71,0:00:35.43,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}PROBLEMS.
+Dialogue: 0,0:00:35.91,0:00:36.35,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}FIRST,
+Dialogue: 0,0:00:36.41,0:00:36.75,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU TRY TO
+Dialogue: 0,0:00:36.75,0:00:37.35,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SPEND THE FORTUNE
+Dialogue: 0,0:00:37.35,0:00:37.91,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}LIKE A NORMAL
+Dialogue: 0,0:00:37.91,0:00:38.57,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}PERSON.
+Dialogue: 0,0:00:38.69,0:00:39.13,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU BUY A
+Dialogue: 0,0:00:39.13,0:00:40.11,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}GLASS PENTHOUSE,
+Dialogue: 0,0:00:40.11,0:00:40.79,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}A SOLID GOLD
+Dialogue: 0,0:00:40.79,0:00:41.63,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}CYBERTRUCK,
+Dialogue: 0,0:00:41.63,0:00:42.21,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND A PRIVATE
+Dialogue: 0,0:00:42.21,0:00:43.07,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ISLAND SHAPED LIKE
+Dialogue: 0,0:00:43.07,0:00:43.57,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}A SLICE OF
+Dialogue: 0,0:00:43.57,0:00:44.11,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}PIZZA.
+Dialogue: 0,0:00:44.23,0:00:44.75,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU PAY OFF
+Dialogue: 0,0:00:44.75,0:00:45.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOUR MOM'S HOUSE
+Dialogue: 0,0:00:45.41,0:00:46.29,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND BUY EVERY
+Dialogue: 0,0:00:46.29,0:00:47.19,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}FRIEND A CUSTOM
+Dialogue: 0,0:00:47.19,0:00:48.11,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SUPERCAR.
+Dialogue: 0,0:00:48.25,0:00:49.07,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TOTAL DAMAGE?
+Dialogue: 0,0:00:49.33,0:00:50.63,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}$500{\c&HFFFFFF&} MILLION.
+Dialogue: 0,0:00:50.79,0:00:51.35,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU CHECK YOUR
+Dialogue: 0,0:00:51.35,0:00:52.11,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}BALANCE EXPECTING
+Dialogue: 0,0:00:52.11,0:00:53.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}A HUGE DENT.
+Dialogue: 0,0:00:53.47,0:00:54.53,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}BUT {\c&H4AD5FF&}TESLA{\c&HFFFFFF&} STOCK
+Dialogue: 0,0:00:54.53,0:00:55.65,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TICKED UP {\c&H4AD5FF&}2%{\c&HFFFFFF&}
+Dialogue: 0,0:00:55.65,0:00:56.07,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WHILE YOU WERE
+Dialogue: 0,0:00:56.07,0:00:56.87,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}EATING LUNCH.
+Dialogue: 0,0:00:56.89,0:00:57.97,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU SOMEHOW MADE
+Dialogue: 0,0:00:57.97,0:00:59.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}$6{\c&HFFFFFF&} BILLION BY
+Dialogue: 0,0:00:59.77,0:01:00.57,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ACCIDENT.
+Dialogue: 0,0:01:00.69,0:01:01.65,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU REALIZE YOU
+Dialogue: 0,0:01:01.65,0:01:02.65,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}LITERALLY CANNOT
+Dialogue: 0,0:01:02.65,0:01:03.55,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SPEND THIS MONEY
+Dialogue: 0,0:01:03.55,0:01:04.53,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}FAST ENOUGH.
+Dialogue: 0,0:01:04.81,0:01:05.27,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THEN,
+Dialogue: 0,0:01:05.27,0:01:06.15,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE COMPANY PHONES
+Dialogue: 0,0:01:06.15,0:01:07.09,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}START RINGING OFF
+Dialogue: 0,0:01:07.09,0:01:07.85,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE HOOK.
+Dialogue: 0,0:01:08.01,0:01:08.87,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AT {\c&H4AD5FF&}SPACEX,{\c&HFFFFFF&}
+Dialogue: 0,0:01:08.95,0:01:09.91,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ENGINEERS BEG FOR
+Dialogue: 0,0:01:09.91,0:01:10.63,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}LAUNCH CLEARANCE,
+Dialogue: 0,0:01:10.63,0:01:11.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SO YOU ACCIDENTALLY
+Dialogue: 0,0:01:11.41,0:01:12.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SEND A STARSHIP
+Dialogue: 0,0:01:12.41,0:01:13.21,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}FULL OF FROZEN
+Dialogue: 0,0:01:13.21,0:01:14.61,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}PIZZAS TOWARD {\c&H4AD5FF&}MARS.{\c&HFFFFFF&}
+Dialogue: 0,0:01:14.83,0:01:15.61,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AT {\c&H4AD5FF&}TESLA,{\c&HFFFFFF&}
+Dialogue: 0,0:01:15.61,0:01:16.45,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU APPROVE ONE
+Dialogue: 0,0:01:16.45,0:01:17.29,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SOFTWARE UPDATE
+Dialogue: 0,0:01:17.29,0:01:18.43,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THAT REPLACES EVERY
+Dialogue: 0,0:01:18.43,0:01:19.27,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}CAR HORN ON
+Dialogue: 0,0:01:19.27,0:01:19.97,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}EARTH WITH A
+Dialogue: 0,0:01:19.97,0:01:20.69,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}SCREAMING {\c&H4AD5FF&}GOAT.{\c&HFFFFFF&}
+Dialogue: 0,0:01:20.69,0:01:21.75,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THEN YOU OPEN
+Dialogue: 0,0:01:21.75,0:01:22.57,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE ADMIN PANEL
+Dialogue: 0,0:01:22.57,0:01:23.29,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AT {\c&H4AD5FF&}X{\c&HFFFFFF&} AND
+Dialogue: 0,0:01:23.29,0:01:24.09,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}BOOST YOUR OWN
+Dialogue: 0,0:01:24.09,0:01:24.73,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TERRIBLE JOKES
+Dialogue: 0,0:01:24.73,0:01:25.71,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TO {\c&H4AD5FF&}8{\c&HFFFFFF&} BILLION
+Dialogue: 0,0:01:25.71,0:01:26.53,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}PHONES.
+Dialogue: 0,0:01:26.79,0:01:27.75,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WITHIN {\c&H4AD5FF&}10{\c&HFFFFFF&} MINUTES,
+Dialogue: 0,0:01:27.75,0:01:28.47,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WORLD LEADERS ARE
+Dialogue: 0,0:01:28.47,0:01:29.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}CALLING YOUR CELL,
+Dialogue: 0,0:01:29.41,0:01:30.11,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE STOCK MARKET
+Dialogue: 0,0:01:30.11,0:01:31.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}IS SWINGING WILDLY,
+Dialogue: 0,0:01:31.41,0:01:32.41,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND THREE ROCKETS
+Dialogue: 0,0:01:32.41,0:01:33.49,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ARE ON FIRE!
+Dialogue: 0,0:01:33.89,0:01:34.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}BY MIDNIGHT,
+Dialogue: 0,0:01:35.13,0:01:35.99,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE LUXURY IS
+Dialogue: 0,0:01:35.99,0:01:37.31,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}COMPLETELY GONE.
+Dialogue: 0,0:01:37.57,0:01:38.31,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU HAVEN'T SLEPT
+Dialogue: 0,0:01:38.31,0:01:39.67,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}A SINGLE SECOND.
+Dialogue: 0,0:01:40.09,0:01:41.47,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}14,000{\c&HFFFFFF&} ENGINEERS
+Dialogue: 0,0:01:41.47,0:01:42.19,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ARE WAITING FOR
+Dialogue: 0,0:01:42.19,0:01:42.99,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOUR SIGNATURE.
+Dialogue: 0,0:01:43.13,0:01:43.89,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}CONGRESS JUST HANDED
+Dialogue: 0,0:01:43.89,0:01:44.81,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU A SUBPOENA
+Dialogue: 0,0:01:44.85,0:01:45.67,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND ARMED GUARDS
+Dialogue: 0,0:01:45.67,0:01:46.23,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WON'T LET YOU
+Dialogue: 0,0:01:46.23,0:01:47.53,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}WALK OUTSIDE ALONE.
+Dialogue: 0,0:01:47.65,0:01:48.39,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU ARE NOT
+Dialogue: 0,0:01:48.39,0:01:49.17,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE RICHEST RULER
+Dialogue: 0,0:01:49.17,0:01:49.93,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}ON EARTH.
+Dialogue: 0,0:01:50.13,0:01:50.99,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU ARE A
+Dialogue: 0,0:01:50.99,0:01:52.07,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}PRISONER TO SIX
+Dialogue: 0,0:01:52.07,0:01:53.55,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}GIANT COMPANIES.
+Dialogue: 0,0:01:54.03,0:01:54.61,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}DESPERATE!
+Dialogue: 0,0:01:54.71,0:01:55.39,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}YOU CALL {\c&H4AD5FF&}ELON{\c&HFFFFFF&}
+Dialogue: 0,0:01:55.39,0:01:56.21,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TO BEG HIM
+Dialogue: 0,0:01:56.21,0:01:56.71,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}TO TAKE HIS
+Dialogue: 0,0:01:56.71,0:01:57.73,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}EMPIRE BACK!
+Dialogue: 0,0:01:57.97,0:01:59.05,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE LINE CLICKS,
+Dialogue: 0,0:01:59.25,0:01:59.81,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}AND AN AUTOMATED
+Dialogue: 0,0:01:59.81,0:02:00.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}VOICE SAYS,
+Dialogue: 0,0:02:00.99,0:02:01.45,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}THE NUMBER YOU
+Dialogue: 0,0:02:01.45,0:02:02.13,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}DIALED IS ON
+Dialogue: 0,0:02:02.13,0:02:02.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}A BEACH WITH
+Dialogue: 0,0:02:02.77,0:02:03.77,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}NO WI-FI.
+Dialogue: 0,0:02:04.01,0:02:04.67,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}GOOD LUCK,
+Dialogue: 0,0:02:04.67,0:02:04.99,Cap,,0,0,0,,{\pos(720,2048)\fscx80\fscy80\t(0,90,\fscx104\fscy104)\t(90,160,\fscx100\fscy100)}{\c&H4AD5FF&}CHIEF!{\c&HFFFFFF&}

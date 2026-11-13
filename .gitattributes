@@ -1,0 +1,11 @@
+*.bat text eol=crlf
+*.sh text eol=lf
+*.py text eol=lf
+*.webp binary
+*.png binary
+*.jpg binary
+*.bin binary
+*.hdr binary
+*.wav binary
+*.ttf binary
+*.part* binary
