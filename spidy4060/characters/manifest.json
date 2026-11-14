@@ -1,0 +1,143 @@
+[
+  {
+    "key": "spidy",
+    "name": "Spider-Man",
+    "role": "Masked hero · bare wrists / full / empty",
+    "group": "Principals"
+  },
+  {
+    "key": "peter",
+    "name": "Peter · unmasked suit",
+    "role": "Andrew Garfield-inspired face · shared hero identity",
+    "group": "Principals"
+  },
+  {
+    "key": "peterCasual",
+    "name": "Peter · everyday",
+    "role": "Same face · civilian wardrobe",
+    "group": "Principals"
+  },
+  {
+    "key": "gwen",
+    "name": "Gwen Stacy",
+    "role": "Blonde waves · warm coat · teal eyes",
+    "group": "Principals"
+  },
+  {
+    "key": "child",
+    "name": "Milo · rescue child",
+    "role": "Age 7 · yellow raincoat · teal backpack",
+    "group": "Principals"
+  },
+  {
+    "key": "civilian01",
+    "name": "Leo · selfie fan",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "everyday01"
+  },
+  {
+    "key": "civilian02",
+    "name": "Grace · teacher",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "everyday02"
+  },
+  {
+    "key": "civilian03",
+    "name": "Ben · contractor",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "everyday03"
+  },
+  {
+    "key": "civilian04",
+    "name": "Arthur · neighbor",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "everyday04"
+  },
+  {
+    "key": "civilian05",
+    "name": "Nina · café regular",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "everyday05"
+  },
+  {
+    "key": "civilian06",
+    "name": "Ruth · parent",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "mom"
+  },
+  {
+    "key": "civilian07",
+    "name": "Owen · commuter",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "office01"
+  },
+  {
+    "key": "civilian08",
+    "name": "Maya · photographer",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "office02"
+  },
+  {
+    "key": "civilian09",
+    "name": "Frank · delivery rider",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "office03"
+  },
+  {
+    "key": "civilian10",
+    "name": "Claire · student",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "office04"
+  },
+  {
+    "key": "civilian11",
+    "name": "Jules · music fan",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "office05"
+  },
+  {
+    "key": "civilian12",
+    "name": "Marcus · office worker",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "board02"
+  },
+  {
+    "key": "civilian13",
+    "name": "Priya · shopper",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "board04"
+  },
+  {
+    "key": "civilian14",
+    "name": "Walter · shopkeeper",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "board05"
+  },
+  {
+    "key": "civilian15",
+    "name": "Naomi · local artist",
+    "role": "NYC ensemble · distinct face and silhouette",
+    "group": "City",
+    "source": "board06"
+  },
+  {
+    "key": "miniSpider",
+    "name": "Pip · tiny spider",
+    "role": "Eight legs · ceiling descent · lens greeting",
+    "group": "Outro"
+  }
+]
