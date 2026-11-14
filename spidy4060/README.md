@@ -1,9 +1,9 @@
 # Spidy4060 — Brain Decoy character pack
 
-21 cast entries in the same smooth, shaded 2D cartoon style as the earlier Elon character sheets:
+31 cast entries in the same smooth, shaded 2D cartoon style as the earlier Elon character sheets:
 - Masked Spider-Man, unmasked suited Peter, and civilian Peter sharing one identity profile.
 - Andrew Garfield-inspired stylized Peter, Gwen Stacy, and a seven-year-old rescue child.
-- 15 distinct civilians: fans, commuters, neighbors, workers, a parent, a rider, students and shoppers.
+- 25 distinct civilians: fans, commuters, neighbors, workers, a parent, a rider, students and shoppers.
 - Pip, the eight-legged red-and-blue outro spider.
 
 ## Open the studio

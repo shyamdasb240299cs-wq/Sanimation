@@ -342,7 +342,7 @@ function drawClothing(g,O,P,f,top,bottom){
  if(O.vest){
   for(let y=top+68;y<bottom-20;y+=28)cvLine(g,[['moveTo',center-s+10,y],['quadraticCurveTo',center,y+14,center+s-10,y]],mix(O.tunic,'#a6b7b1',.25),1.8);
   cvLine(g,[['moveTo',sx,top+22],['lineTo',sx,bottom]],'#9daba3',2.3);
-  cvLine(g,[['moveTo',sx-9,top+71],['quadraticCurveTo',sx+3,top+64,sx+15,top+71]],'#c66161',3);cvLine(g,[['moveTo',sx+3,top+70],['lineTo',sx+3,top+90]],'#c66161',3);
+  if(!O.identity.startsWith('civilian')){cvLine(g,[['moveTo',sx-9,top+71],['quadraticCurveTo',sx+3,top+64,sx+15,top+71]],'#c66161',3);cvLine(g,[['moveTo',sx+3,top+70],['lineTo',sx+3,top+90]],'#c66161',3);}
  }
  if(O.hawaiian){
   for(const [dx,dy,r] of [[-55,46,11],[49,61,12],[-39,115,10],[60,151,11],[-47,196,10],[12,179,10]]){
@@ -668,6 +668,26 @@ export const SPIDY_CAST=[
  ...['everyday01','everyday02','everyday03','everyday04','everyday05','mom','office01','office02','office03','office04','office05','board02','board04','board05','board06'].map((k,i)=>({key:'civilian'+String(i+1).padStart(2,'0'),name:['Leo · selfie fan','Grace · teacher','Ben · contractor','Arthur · neighbor','Nina · café regular','Ruth · parent','Owen · commuter','Maya · photographer','Frank · delivery rider','Claire · student','Jules · music fan','Marcus · office worker','Priya · shopper','Walter · shopkeeper','Naomi · local artist'][i],role:'NYC ensemble · distinct face and silhouette',group:'City',source:k})),
  {key:'miniSpider',name:'Pip · tiny spider',role:'Eight legs · ceiling descent · lens greeting',group:'Outro'}];
 for(const c of SPIDY_CAST.filter(c=>c.source)){OUTFITS[c.key]={...OUTFITS[c.source],badge:null,R:c.key==='civilian01'||c.key==='civilian08'?'phone':'hang',L:'hang',blazer:false,tie:null,casual:true};}
+// Additional street ensemble: independent face proportions and wardrobe definitions.
+const CITY_ADDITIONS = [
+ ['Diego · bike messenger','quiff','#976344','#25272b','#cb7147','#334b58',104,144,.83,.58,22,91,68,{vest:true,inner:'#ddd2b9'}],
+ ['Amara · florist','bun','#744b38','#28232b','#799566','#665345',115,125,.75,.62,23,86,77,{cardigan:true,inner:'#f0d7ab',earrings:true}],
+ ['Mei · architect','bob','#e1b18d','#272731','#6d8494','#34435b',99,143,.67,.48,18,80,60,{glasses:'smart',casual:true,inner:'#eee1cb'}],
+ ['Sam · skateboarder','messy','#d6a47d','#754632','#bd9a47','#425c70',111,130,.74,.55,21,89,75,{hoodie:true,hoodCol:'#917239',beanie:'#496e6a'}],
+ ['Elena · bookseller','wavy','#c08a68','#9c6240','#805c80','#4b455c',108,139,.77,.61,19,83,73,{cardigan:true,inner:'#e4c9a5',glasses:'gold'}],
+ ['Hassan · taxi driver','buzz','#b58158','#342a2b','#426f75','#414f50',124,132,.93,.75,17,113,93,{stout:true,stubble:true,casual:true,inner:'#d5c9b4'}],
+ ['Iris · retired nurse','silver','#edc8ae','#c7c6c1','#af7482','#5a586c',114,137,.80,.63,20,85,80,{cardigan:true,inner:'#f1e2d3',glasses:'gold',brows:'#817a77'}],
+ ['Andre · barista','curly','#805138','#252329','#b48c66','#4c5546',105,145,.72,.53,22,95,64,{casual:true,inner:'#f1dabb',stubble:true}],
+ ['Sofia · dog walker','long','#d7a17c','#49332d','#599392','#5b6784',107,131,.70,.52,23,81,68,{hoodie:true,hoodCol:'#397676',earrings:true}],
+ ['Noah · street musician','parted','#edc0a2','#a45936','#a35b43','#465465',101,151,.69,.48,18,88,63,{vest:true,inner:'#e0c9aa',glasses:'nerd'}]
+];
+for(const [i,entry] of CITY_ADDITIONS.entries()){
+ const [name,hairStyle,skin,hair,tunic,pants,a,b,jaw,chin,eyes,shoulders,waist,details]=entry;
+ const key='civilian'+String(i+16).padStart(2,'0');
+ CHARACTER_PROFILES[key]={...CHARACTER_PROFILES.hero,a,b,jaw,chin,eyes,eyeGap:34+i%4*3,eyeH:9+i%3,nose:.78+i*.045,mouth:.88+i%4*.08,shoulders,waist,neck:23+i%3*3,iris:['#5c4436','#6f744d','#496675'][i%3]};
+ OUTFITS[key]={identity:key,skin,hair,hairStyle,tunic,pants,shoes:['#d8cdb3','#665044','#384356'][i%3],...details};
+ SPIDY_CAST.splice(SPIDY_CAST.length-1,0,{key,name,role:'NYC ensemble · '+hairStyle+' hair · independent face profile',group:'City'});
+}
 export function drawCharacter(g,key,opts={}){
  if(key==='miniSpider'){
   g.save();g.translate(300,610);let t=opts.time||0;g.translate(0,Math.sin(t*2)*9);

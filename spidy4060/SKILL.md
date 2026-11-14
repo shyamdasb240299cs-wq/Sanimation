@@ -17,3 +17,5 @@ These are 2D vector rigs suitable for 2.5D cards, not Blender skeletal meshes. `
 Validation: run `npm run capture`, then `python3 make-sheets.py`. Inspect principal and civilian sheets, all expression and turn sheets, device states, and successive reel frames. Capture an initial pass, fix visual problems, and inspect the final pass. Preserve review findings in `review/QA.md`.
 
 Narration is `audio/voiceover-original.mp3`, verified 81.3975 seconds. Keep it byte-for-byte intact. The original brief is reference material. When building the later film, no wrist devices on the first jump; full cartridges after retrieval; empty devices remain attached after depletion and during rescue. Gwen is available for the love/normal-life reflection but has no additional spoken dialogue.
+
+The cast now has 31 entries, including 25 civilians. Added civilian16–civilian25 have independent identity profiles in `CITY_ADDITIONS`. Select sheets by `group` rather than array offsets so future additions remain included. `SKIP_MOTION=1 npm run capture` refreshes exports and validation while preserving the unchanged principal motion reel.

@@ -10,7 +10,9 @@ def sheet(items,name,cols,w,h):
  im.save(p/'sheets'/f'{name}.jpg',quality=94)
 cast=json.loads((p/'characters/manifest.json').read_text())
 sheet([(p/'characters'/f'{a["key"]}.png',a['name']) for a in cast[:5]],'principal-cast',5,350,620)
-sheet([(p/'characters'/f'{a["key"]}.png',a['name']) for a in cast[5:20]],'city-cast',5,350,620)
+sheet([(p/'characters'/f'{a["key"]}.png',a['name']) for a in cast if a['group']=='City'],'city-cast',5,350,620)
 for key in ['spidy','peter','gwen','child']:
  sheet([(p/'review/heads'/f'{key}-{e}.png',e) for e in ['neutral','happy','shock','angry','sad','exhausted']],key+'-expressions',3,350,420)
  sheet([(p/'review/turns'/f'{key}-{f}.png',str(f)) for f in [-1,-.5,0,.5,1]],key+'-turns',5,300,380)
+
+sheet([(p/'characters'/f'{a["key"]}.png',a['name']) for a in cast if a['key'] in [f'civilian{i}' for i in range(16,26)]],'city-additions',5,350,620)

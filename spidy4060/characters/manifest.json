@@ -135,6 +135,66 @@
     "source": "board06"
   },
   {
+    "key": "civilian16",
+    "name": "Diego · bike messenger",
+    "role": "NYC ensemble · quiff hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian17",
+    "name": "Amara · florist",
+    "role": "NYC ensemble · bun hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian18",
+    "name": "Mei · architect",
+    "role": "NYC ensemble · bob hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian19",
+    "name": "Sam · skateboarder",
+    "role": "NYC ensemble · messy hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian20",
+    "name": "Elena · bookseller",
+    "role": "NYC ensemble · wavy hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian21",
+    "name": "Hassan · taxi driver",
+    "role": "NYC ensemble · buzz hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian22",
+    "name": "Iris · retired nurse",
+    "role": "NYC ensemble · silver hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian23",
+    "name": "Andre · barista",
+    "role": "NYC ensemble · curly hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian24",
+    "name": "Sofia · dog walker",
+    "role": "NYC ensemble · long hair · independent face profile",
+    "group": "City"
+  },
+  {
+    "key": "civilian25",
+    "name": "Noah · street musician",
+    "role": "NYC ensemble · parted hair · independent face profile",
+    "group": "City"
+  },
+  {
     "key": "miniSpider",
     "name": "Pip · tiny spider",
     "role": "Eight legs · ceiling descent · lens greeting",
